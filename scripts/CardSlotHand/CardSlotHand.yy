@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CardSlotHand",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CardSlotHand",
+  "parent":{
+    "name":"Class",
+    "path":"folders/Scripts/Class.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

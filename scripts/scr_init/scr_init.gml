@@ -1,0 +1,41 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_init(){
+	
+	randomize()
+	
+	// Deck
+	global.baseDeck = []
+	global.playerDeck = []
+	global.enemyDeck = []
+	
+	// Piles
+	global.playerPile = {
+		draw: [],
+		discard: []
+	}
+	global.enemyPile = {
+		draw: [],
+		discard: []
+	}
+	
+	// Hand & Field
+	global.playerHand = [new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand()]
+	global.enemyHand = [new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand()]
+	global.field = [new CardSlotField(), new CardSlotField(), new CardSlotField()]
+	
+	// Create 40 cards for player
+	for (i = 1; i <= 10; i++) {
+		array_push(global.baseDeck, new CardBase(i, "player"))
+		array_push(global.baseDeck, new CardBase(i, "player"))
+		array_push(global.baseDeck, new CardBase(i, "player"))
+		array_push(global.baseDeck, new CardBase(i, "player"))
+	}
+
+	// Transfer to player deck
+	array_copy(global.playerDeck, 0, global.baseDeck, 0, array_length(global.baseDeck))
+	// Transfer from deck to draw pile
+	array_copy(global.playerPile.draw, 0, global.playerDeck, 0, array_length(global.playerDeck))
+	// Shuffle
+	global.playerPile.draw = array_shuffle(global.playerPile.draw)
+}

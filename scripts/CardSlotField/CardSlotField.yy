@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CardSlotField",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CardSlotField",
+  "parent":{
+    "name":"Class",
+    "path":"folders/Scripts/Class.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
