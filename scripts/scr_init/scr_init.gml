@@ -19,6 +19,11 @@ function scr_init(){
 		discard: []
 	}
 	
+	// Controller
+	global.controller = {
+		cardSelected: -1
+	}
+	
 	// Hand & Field
 	global.playerHand = [new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand()]
 	global.enemyHand = [new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand()]
@@ -38,4 +43,14 @@ function scr_init(){
 	array_copy(global.playerPile.draw, 0, global.playerDeck, 0, array_length(global.playerDeck))
 	// Shuffle
 	global.playerPile.draw = array_shuffle(global.playerPile.draw)
+	
+	// Populate starting field
+	scr_card_place("neutral", -1, 0)
+	scr_card_place("neutral", -1, 1)
+	scr_card_place("neutral", -1, 2)
+	
+	// Create field
+	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 0})
+	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 1})
+	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 2})
 }

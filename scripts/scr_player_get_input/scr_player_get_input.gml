@@ -1,0 +1,15 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_player_get_input(){
+	buttonCard1Pressed = keyboard_check_pressed(ord("Q"))
+	buttonCard2Pressed = keyboard_check_pressed(ord("W"))
+	buttonCard3Pressed = keyboard_check_pressed(ord("E"))
+	buttonCard4Pressed = keyboard_check_pressed(ord("R"))
+	buttonCard5Pressed = keyboard_check_pressed(ord("T"))
+	buttonCardLeftPressed = keyboard_check_pressed(vk_left)
+	buttonCardUpPressed = keyboard_check_pressed(vk_up)
+	buttonCardDownPressed = keyboard_check_pressed(vk_down)
+	buttonCardRightPressed = keyboard_check_pressed(vk_right)
+	buttonCardDrawPressed = keyboard_check_pressed(ord("Z"))
+	buttonCardResetPressed = keyboard_check_pressed(ord("X"))
+}

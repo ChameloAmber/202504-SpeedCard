@@ -13,5 +13,7 @@ function scr_card_place(_sourcePlayer, _slotSource, _slotDestination){
 		global.field[_slotDestination].card = global.enemyHand[_slotSource].cardInstance.card	
 		instance_destroy(global.enemyHand[_slotSource].cardInstance)
 		global.enemyHand[_slotSource].cardInstance = -1
+	} else if _sourcePlayer == "neutral" {
+		global.field[_slotDestination].card = new CardBase(irandom_range(1, 10), "neutral")
 	}
 }
