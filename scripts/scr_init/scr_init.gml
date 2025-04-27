@@ -2,6 +2,21 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_init(){
 	
+	// Check OS
+	if os_type == os_android || os_type == os_ios {
+		device_mouse_dbclick_enable(false)
+	}
+	
+	var ratio = clamp(floor(min(browser_width / 640, browser_height / 360)), 1, 3)
+	global.screen = {
+		width: 640 * ratio,
+		height: 360 * ratio
+	}
+	
+	window_set_size(640 * ratio, 360 * ratio)
+	window_center()
+	
+	
 	randomize()
 	
 	// Deck

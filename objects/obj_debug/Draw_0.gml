@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-x = 32 + (position * 96)
-y = 256
+draw_sprite(spr_screen_border, 0, 0, 0)

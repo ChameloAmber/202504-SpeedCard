@@ -55,6 +55,7 @@
     {"id":{"name":"scr_player_select_field","path":"scripts/scr_player_select_field/scr_player_select_field.yy",},},
     {"id":{"name":"spr_card_base","path":"sprites/spr_card_base/spr_card_base.yy",},},
     {"id":{"name":"spr_card_selected","path":"sprites/spr_card_selected/spr_card_selected.yy",},},
+    {"id":{"name":"spr_screen_border","path":"sprites/spr_screen_border/spr_screen_border.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

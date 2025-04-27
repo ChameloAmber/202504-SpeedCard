@@ -12,4 +12,7 @@ function scr_player_get_input(){
 	buttonCardRightPressed = keyboard_check_pressed(vk_right)
 	buttonCardDrawPressed = keyboard_check_pressed(ord("Z"))
 	buttonCardResetPressed = keyboard_check_pressed(ord("X"))
+	if os_type == os_android || os_type == os_ios {
+		buttonCardDrawPressed = device_mouse_check_button_pressed(0, mb_any)
+	}
 }
