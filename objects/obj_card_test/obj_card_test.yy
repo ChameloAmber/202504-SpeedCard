@@ -9,8 +9,8 @@
   "name":"obj_card_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Templates",
+    "path":"folders/Objects/Templates.yy",
   },
   "parentObjectId":null,
   "persistent":false,

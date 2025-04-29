@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_screen_adjust",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_screen_adjust",
+  "parent":{
+    "name":"Screen",
+    "path":"folders/Scripts/Screen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

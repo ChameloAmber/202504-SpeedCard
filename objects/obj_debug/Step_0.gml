@@ -6,3 +6,7 @@ for (var i = 0; i <= 4; i++) {
 		lastTapY[i] = device_mouse_y(i)
 	}
 }
+
+/*if global.screenCurrent.width != browser_width || global.screenCurrent.height != browser_height {
+	scr_screen_adjust()
+}*/

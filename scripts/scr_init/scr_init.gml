@@ -6,16 +6,7 @@ function scr_init(){
 	if os_type == os_android || os_type == os_ios {
 		device_mouse_dbclick_enable(false)
 	}
-	
-	var ratio = clamp(floor(min(browser_width / 640, browser_height / 360)), 1, 3)
-	global.screen = {
-		width: 640 * ratio,
-		height: 360 * ratio
-	}
-	
-	window_set_size(640 * ratio, 360 * ratio)
-	window_center()
-	
+	scr_screen_adjust()
 	
 	randomize()
 	
@@ -65,7 +56,7 @@ function scr_init(){
 	scr_card_place("neutral", -1, 2)
 	
 	// Create field
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 0})
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 1})
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 2})
+	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 0})
+	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 1})
+	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 2})
 }
