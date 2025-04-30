@@ -3,7 +3,7 @@
 function scr_card_player_draw(){
 	for (var i = 0; i < 5; i++) {
 		if (global.playerHand[i].cardInstance == -1) {
-			global.playerHand[i].cardInstance = instance_create_layer(0, 0, layer_get_id("Instances"), obj_card_test, {card: array_pop(global.playerPile.draw), position: i})
+			global.playerHand[i].cardInstance = instance_create_layer(0, 0, layer_get_id("Instances"), obj_card, {card: array_pop(global.playerPile.draw), holder: "player", position: i})
 			return
 		}
 	}

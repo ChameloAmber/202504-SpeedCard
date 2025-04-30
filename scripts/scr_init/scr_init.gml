@@ -35,28 +35,14 @@ function scr_init(){
 	global.enemyHand = [new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand(), new CardSlotHand()]
 	global.field = [new CardSlotField(), new CardSlotField(), new CardSlotField()]
 	
-	// Create 40 cards for player
+	// Create 40 cards for base deck
 	for (i = 1; i <= 10; i++) {
-		array_push(global.baseDeck, new CardBase(i, "player"))
-		array_push(global.baseDeck, new CardBase(i, "player"))
-		array_push(global.baseDeck, new CardBase(i, "player"))
-		array_push(global.baseDeck, new CardBase(i, "player"))
+		array_push(global.baseDeck, new CardBase(i, "red", "player"))
+		array_push(global.baseDeck, new CardBase(i, "green", "player"))
+		array_push(global.baseDeck, new CardBase(i, "blue", "player"))
+		array_push(global.baseDeck, new CardBase(i, "yellow", "player"))
 	}
 
 	// Transfer to player deck
 	array_copy(global.playerDeck, 0, global.baseDeck, 0, array_length(global.baseDeck))
-	// Transfer from deck to draw pile
-	array_copy(global.playerPile.draw, 0, global.playerDeck, 0, array_length(global.playerDeck))
-	// Shuffle
-	global.playerPile.draw = array_shuffle(global.playerPile.draw)
-	
-	// Populate starting field
-	scr_card_place("neutral", -1, 0)
-	scr_card_place("neutral", -1, 1)
-	scr_card_place("neutral", -1, 2)
-	
-	// Create field
-	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 0})
-	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 1})
-	//instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 2})
 }

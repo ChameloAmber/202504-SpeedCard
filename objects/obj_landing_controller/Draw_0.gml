@@ -17,4 +17,4 @@ switch global.screen.size {
 		break
 }
 
-draw_sprite(_sprite, 0, (global.screen.width/2)-(_width/2), max(global.screen.height*0.08, 30))
+draw_sprite(_sprite, 0, (global.screen.width/2)-(_width/2), global.screen.height*0.05)

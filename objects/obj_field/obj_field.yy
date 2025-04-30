@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_card_base",
-    "path":"sprites/spr_card_base/spr_card_base.yy",
+    "name":"spr_card_base_2x",
+    "path":"sprites/spr_card_base_2x/spr_card_base_2x.yy",
   },
   "spriteMaskId":null,
   "visible":true,

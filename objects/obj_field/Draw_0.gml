@@ -1,5 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self()
-draw_text(bbox_left, bbox_top-20, string("Field {0}", position+1))
-draw_text(x + 14, y + 14, global.field[position].card.number)
+if global.screen.size == 1 {
+	// Draw for 1x
+	draw_sprite(spr_card_base_1x, 0, x, y)
+	switch global.field[position].card.suit {
+		case "red": draw_sprite(spr_card_suit_1x, 0, x, y); break;
+		case "green": draw_sprite(spr_card_suit_1x, 1, x, y); break;
+		case "blue": draw_sprite(spr_card_suit_1x, 2, x, y); break;
+		case "yellow": draw_sprite(spr_card_suit_1x, 3, x, y); break;
+	}
+	draw_sprite(spr_card_number_1x, global.field[position].card.number - 1, x, y)
+} else {
+	// Draw for 2x
+	draw_sprite(spr_card_base_2x, 0, x, y)
+	switch global.field[position].card.suit {
+		case "red": draw_sprite(spr_card_suit_2x, 0, x, y); break;
+		case "green": draw_sprite(spr_card_suit_2x, 1, x, y); break;
+		case "blue": draw_sprite(spr_card_suit_2x, 2, x, y); break;
+		case "yellow": draw_sprite(spr_card_suit_2x, 3, x, y); break;
+	}
+	draw_sprite(spr_card_number_2x, global.field[position].card.number - 1, x, y)
+}

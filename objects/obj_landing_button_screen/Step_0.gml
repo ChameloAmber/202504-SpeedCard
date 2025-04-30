@@ -10,4 +10,4 @@ switch global.screen.size {
 }
 
 x = (global.screen.width/2)-(sprite_width/2)
-y = max(global.screen.height * 0.38, 160)
+y = global.screen.height * 0.4

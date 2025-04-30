@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_landing_screen_2x",
+    "path":"sprites/spr_landing_screen_2x/spr_landing_screen_2x.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

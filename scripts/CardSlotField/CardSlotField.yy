@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CardSlotField",
   "parent":{
-    "name":"Class",
-    "path":"folders/Scripts/Class.yy",
+    "name":"_Class",
+    "path":"folders/Scripts/_Class.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
