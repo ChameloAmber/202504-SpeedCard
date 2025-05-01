@@ -15,6 +15,19 @@ function scr_init(){
 	global.playerDeck = []
 	global.enemyDeck = []
 	
+	// Stats
+	global.playerStat = {
+		hp: 100,
+		speed: 0.5,
+		range: 1,
+	}
+	
+	global.enemyStat = {
+		hp: 100,
+		speed: 1.2,
+		range: 1,
+	}
+	
 	// Piles
 	global.playerPile = {
 		draw: [],

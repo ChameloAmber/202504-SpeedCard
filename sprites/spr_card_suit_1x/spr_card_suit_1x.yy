@@ -22,6 +22,7 @@
   "height":70,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"9e6a48fe-34cd-4852-a7a5-b41bf9ff84de","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"9e6a48fe-34cd-4852-a7a5-b41bf9ff84de","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"2369c47c-c783-4c65-96dd-e32e3b319da5","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"2369c47c-c783-4c65-96dd-e32e3b319da5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_card_suit_1x",

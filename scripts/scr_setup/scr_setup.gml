@@ -23,7 +23,7 @@ function scr_setup(){
 	scr_card_place("neutral", -1, 2)
 	
 	// Create field
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 0})
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 1})
-	instance_create_layer(0, 0, layer_get_id("Instances"), obj_field, {position: 2})
+	instance_create_layer(0, 0, layer_get_id("Base"), obj_field, {position: 0})
+	instance_create_layer(0, 0, layer_get_id("Base"), obj_field, {position: 1})
+	instance_create_layer(0, 0, layer_get_id("Base"), obj_field, {position: 2})
 }

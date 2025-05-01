@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_card_commit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_card_commit",
+  "parent":{
+    "name":"Card",
+    "path":"folders/Scripts/Card.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
