@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-x = global.screen.width * (0.34 + (0.12 * position)) 
-y = global.screen.height * 0.41
+x = floor((global.screen.width * 0.21) + (10 * global.screen.size) + ((20 + sprite_get_width(spr_card_base_1x)) * (position+1) * global.screen.size))
+y = floor(global.screen.height * 0.38)

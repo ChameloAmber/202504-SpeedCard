@@ -13,8 +13,8 @@ if movement == "idle" {
 } else if movement == "field" {
 	moveTime += (delta_time / 1000000)
 	if holder == "player" {
-		x = lerp(origin_x, global.screen.width * (0.34 + (0.12 * target)), dsin(moveTime/global.playerStat.speed*90))
-		y = lerp(origin_y, global.screen.height * 0.41, dsin(moveTime/global.playerStat.speed*90))
+		x = lerp(origin_x, floor((global.screen.width * 0.21) + (10 * global.screen.size) + ((20 + sprite_get_width(spr_card_base_1x)) * (target+1) * global.screen.size)), dsin(moveTime/global.playerStat.speed*90))
+		y = lerp(origin_y, floor(global.screen.height * 0.38), dsin(moveTime/global.playerStat.speed*90))
 		if moveTime >= global.playerStat.speed {
 			// Check range again
 			if scr_card_range_check(holder, card.number, global.field[target].card.number) {

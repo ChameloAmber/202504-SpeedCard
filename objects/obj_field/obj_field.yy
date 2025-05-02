@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Templates",
-    "path":"folders/Objects/Templates.yy",
+    "path":"folders/Objects/Game/Templates.yy",
   },
   "parentObjectId":null,
   "persistent":false,

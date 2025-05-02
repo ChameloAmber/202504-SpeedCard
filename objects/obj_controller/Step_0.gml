@@ -22,13 +22,13 @@ if buttonCard5Pressed {
 	scr_player_select_card(4)
 }
 
-if buttonCardLeftPressed {
+if buttonField1Pressed {
 	scr_player_select_field(0)
 }
-if buttonCardUpPressed || buttonCardDownPressed {
+if buttonField2Pressed {
 	scr_player_select_field(1)
 }
-if buttonCardRightPressed {
+if buttonField3Pressed {
 	scr_player_select_field(2)
 }
 
