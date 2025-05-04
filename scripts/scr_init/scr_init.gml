@@ -47,6 +47,11 @@ function scr_init(){
 	
 	// Controller
 	global.controller = {
+		mode: "none",
+		landing: {
+			row: -1,
+			column: 0,
+		},
 		mapping: {
 			card1: 81, // Q
 			card2: 87, // W
